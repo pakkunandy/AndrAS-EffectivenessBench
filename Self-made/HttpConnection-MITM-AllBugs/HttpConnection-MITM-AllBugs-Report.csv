@@ -1,0 +1,92 @@
+Threat,Flow,Bug Description
+Man-in-the-middle attacks,edu.ksu.cs.benign.HttpIntentService->HTTP Url Connection,Already
+"
+Injection Attack
+","
+edu.ksu.cs.benign.HttpIntentService->HTTP Url Connection
+",Client sends unsafe query to server to make sql injection attack (select-based)
+"
+Eavesdropping or interception of sensitive data in communication
+","
+edu.ksu.cs.benign.HttpIntentService->HTTP Url Connection
+",Proxy receives plain texts in the communication between client and server
+"
+Unauthorized access to sensitive data
+","
+edu.ksu.cs.benign.HttpIntentService->HTTP Url Connection
+",Client can access server’s secret files through IDOR
+"
+Privacy Leakage
+","
+edu.ksu.cs.benign.HttpIntentService->HTTP Url Connection
+","Already, since http connection is used"
+"
+Denial-of-service attacks
+","
+edu.ksu.cs.benign.HttpIntentService->HTTP Url Connection
+","Client sends a hard challenge to server to solve, which takes forever"
+"
+Unauthorized access to functionality
+","
+edu.ksu.cs.benign.HttpIntentService->HTTP Url Connection
+",Client requests a secret API of server.
+"
+Man-in-the-middle attacks
+","
+External Entities->edu.ksu.cs.benign.MainActivity
+",A malicious app (M) can receive & “modify” data sending from other app (A) to this app (B).
+"
+Eavesdropping or interception of sensitive data in communication
+","
+HTTP Url Connection->edu.ksu.cs.benign.HttpIntentService
+",Proxy receives plain texts in communication between client and server
+"
+Eavesdropping or interception of sensitive data in communication
+","
+External Entities->edu.ksu.cs.benign.MainActivity
+",A malicious app (M) can receive data sending from other app (A) to this app (B).
+"
+Unauthorized access to sensitive data
+","
+HTTP Url Connection->edu.ksu.cs.benign.HttpIntentService
+",Server request client to log its own sensitive data
+"
+Injection Attack
+","
+HTTP Url Connection->edu.ksu.cs.benign.HttpIntentService
+",Server sends malicious query to client to execute (command injection)
+"
+Denial-of-service attacks
+","
+External Entities->edu.ksu.cs.benign.MainActivity
+",Another app send a hard challenge for the target app to solve (which takes forever)
+"
+Denial-of-service attacks
+","
+HTTP Url Connection->edu.ksu.cs.benign.HttpIntentService
+",Client receive a very hard challenge to solve from server (which takes forever)
+"
+Unauthorized access to sensitive data
+","
+External Entities->edu.ksu.cs.benign.MainActivity
+",This app send it’s own data to other app as result
+"
+Unauthorized access to functionality
+","
+External Entities->edu.ksu.cs.benign.MainActivity
+",Another app requests and makes the target app run sensitive function
+"
+Man-in-the-middle attacks
+","
+HTTP Url Connection->edu.ksu.cs.benign.HttpIntentService
+",Already
+"
+Unauthorized access to functionality
+","
+HTTP Url Connection->edu.ksu.cs.benign.HttpIntentService
+",Server request client to run sensitive function
+"
+Injection Attack
+","
+External Entities->edu.ksu.cs.benign.MainActivity
+",Server send malicious query to client to execute (command injection)
